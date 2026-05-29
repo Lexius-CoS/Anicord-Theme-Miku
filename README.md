@@ -1,175 +1,56 @@
-<!-- HEAD PAGE -->
-<div align="center">
-  <img src="assets/projectbanner.png" alt="Anicord Banner" width="550">
-  <br>
-  <a href="https://github.com/sang765/Anicord-Theme"><img src="assets/textdesign.png" alt="Anicord Logo" width="250"></a>
-  <h3>A <strong>anime</strong> theme for Discord mod client.</h3>
-  <a href="https://betterdiscord.app"><img src="assets/BetterDiscord.png" alt="BetterDiscord" width="50"></a>
-  <a href="https://replugged.dev/"><img src="assets/Replugged.png" alt="Replugged" width="50"></a>
-  <a href="https://vencord.dev"><img src="assets/Vencord.png" alt="Vencord" width="50"></a>
-  <a href="https://openasar.dev/"><img src="assets/OpenAsar.png" alt="OpenAsar" width="50"></a>
-  <a href="https://github.com/aero-mod/aero"><img src="assets/areo.png" alt="Areo" width="50"></a>
-</p>
-<h6>This theme is a remake of the <strong>Translucent</strong> theme but I have added a little CSS from <strong>Chillax, ClearVersion</strong> theme, Vencord, BetterDiscord server and a little of my own CSS. All CSS sources I have used will be credited at the end of the reading file.</h6>
-</div>
+# Anicord Miku Edition
 
-<p align="center">
-  <a href="https://github.com/sang765/Anicord-Theme" style="pointer-events: none; cursor: default;">
-    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/CSS/css2.svg" alt="CSS">
-    <img src="https://m3-markdown-badges.vercel.app/stars/8/1/sang765/Anicord-Theme" alt="Star">
-	<br>
-	<a href="https://github.com/sang765/Anicord-Theme/commits/main/"><img src="https://img.shields.io/github/last-commit/sang765/Anicord-Theme?&style=for-the-badge&color=FFFFFF&logoColor=D9E0EE&labelColor=42A5F5"width="170"></a>
-	<a href="https://gibbu.github.io/ThemePreview/?file=https://sang765.github.io/Anicord-Theme/Anicord.theme.css"><img src="https://img.shields.io/badge/Preview-Theme-42A5F5?style=for-the-badge&logo=discord&logoColor=white" alt="Preview Theme" width="170"></a>
-	 </a>
-</p>
+A customized version of the [Anicord Theme](https://github.com/sang765/Anicord-Theme) for Discord, featuring Miku's teal accent color and forest green panels.
 
-<!-- BODY -->
+## Features
 
-## <img src="assets/New.png" alt="New" width="50"> New Features:
+- **Miku Teal Accent**: Buttons, links, and highlights use Miku's signature teal color (`#7AD1D1`)
+- **Forest Green Panels**: Sidebar, chat, and member list have a dark forest green tint
+- **Reduced Blur**: Blur effect reduced from 5px to 2px for better performance
+- **Custom Wallpaper**: Features the Miku meadow wallpaper as the background
 
-- Nerd Font Support, Now you can use Nerd Font Icon with others custom font.
+## Installation
 
-![Nerd Font](/assets/NerdFontPreview.png)
+### Vencord
+1. Go to **Settings** → **Themes** → **Online Themes**
+2. Paste this URL:
+   ```
+   https://raw.githubusercontent.com/Lexius-CoS/Anicord-Theme-Miku/main/Anicord.theme.css
+   ```
+3. Click **Save**
 
-## 🖼️ Screenshots:
->[!NOTE]
-> This screenshot was taken with ***148 Vencord plugins enabled*** so there will be some things that are different in the screenshot. Hope you understand (I'm too lazy to turn it off)
+### BetterDiscord
+1. Download the `Anicord.theme.css` file
+2. Place it in your BetterDiscord themes folder
+3. Enable the theme in **Settings** → **Themes**
 
-Main Screen:
-<br>
-<img src="assets/screenshots/main.png" alt="Main Screen">
-<br>
-Member Server Preview:
-<br>
-<img src="assets/screenshots/member.png" alt="Member Server Preview">
-<br>
-User Profile Preview:
-<br>
-<img src="assets/screenshots/userprofile.png" alt="User Profile">
-<br>
-Settings Preview:
-<br>
-<img src="assets/screenshots/settings.png" alt="Settings Preview">
-<br>
-Some GIF Preview:
-<br>
-<div align="center">
-<img src="https://raw.githubusercontent.com/sang765/Anicord-Theme/main/assets/screenshots/Channel.gif" alt="Channel">
-<br>
-<img src="https://raw.githubusercontent.com/sang765/Anicord-Theme/main/assets/screenshots/MemberList.gif" alt="Member List">
-</div>
-<br>
-Transparency Background Support With Transparency Option:
-<br>
-<div align="center">
-<img src="assets/screenshots/transparency.png" alt="Transparency">
-</div>
-<br>
-<img src="assets/screenshots/transparencypreview.png" alt="Transparency">
+## Customization
 
-## ⚙️ Install Theme
-### Online Import (Vencord)
-
-```
-https://sang765.github.io/Anicord-Theme/themes/Anicord.css
-```
-
-### Quick CSS Import
+You can modify the theme by editing the CSS variables in the `:root` selector:
 
 ```css
-/* Theme Import */
-@import url('https://sang765.github.io/Anicord-Theme/themes/Anicord.css');
-/* CSS You Can Custom */
 :root {
-	--app-bg: url(https://sang765.github.io/Anicord-Theme/assets/themeimage.png); /* background */
-	/* 📄 NOTE: If you want the background to be transparent then you can remove the `url(imageurl)` and then change the attribute to `transparent`
-           Requirements: Please enable "Windows Transparent" in your client mod make sure that work. You aslo can use Mica For Everyone to have a transparent backgound with Mica blur effect */
-	/* Blur, Margin, Radius */
-	--app-blur: 5px;
-	--app-margin: 24px;
-	--app-radius: 10px;
-	/* Font */
-	--main-font: 'Tilt Neon';
-	--code-font: '';
-	/* Server Title */
-	--title-style: center; /* left or center*/
-	/* Color - HSLA */ /* Hex to HSL here: https://htmlcolors.com/hex-to-hsl */
-	--accent-hue: 204; /* H */
-	--accent-saturation: 80%; /* S */
-	--accent-lightness: 65%; /* L */
-	--accent-opacity: 1; /* A */
-	--accent-text-color: #fff; /* Text Color */
-	/* Others */
-	--sidebar-color: rgba(0,0,0,0.4);
-	--main-content-color: rgba(0,0,0,0.2); /*	-	*/
-	/* Message */
-	--message-color: rgba(0,0,0,0.4);
-	--message-radius: 8px;
-	--message-padding-top: 8px;
-	--message-padding-side: 8px; /*	-	*/
-	/* Reply */
-	--reply-hue: var(--accent-hue);
-	--reply-saturation: 77.4%;
-	--reply-lightness: 61.8%;
-	--reply-opacity: 1; /*	-	*/
-	/* Textarea */
-	--textarea-color: 255,255,255;
-	--textarea-alpha: 0.1;
-	--textarea-alpha-focus: 0.15;
-	--textarea-text-color: #fff;
-	--textarea-radius: 22px;  /*	-	*/
-	/* Card */
-	--card-color: rgba(0,0,0,0.4);
-	--card-color-hover: rgba(0,0,0,0.5);
-	--card-color-select: rgba(0,0,0,0.7); /*	-	*/
-	/* Button */
-	--button-height: 32px;
-	--button-padding: 0 16px;
-	--button-action-color: #000;
-	--button-radius: 16px; /*	-	*/
-	/* Scrollbar */
-	--interactive-normal: #aaa;
-	--interactive-hover: #ddd;
-	--interactive-active: #fff;
-	--interactive-muted: #777; /*	-	*/
-	/* Background */
-	--background-modifier-hover: rgba(255,255,255,0.075);
-	--background-modifier-selected: rgba(255,255,255,0.125);
+    /* Background */
+    --app-bg: url(your-image-url);
+    --app-blur: 2px; /* Adjust blur intensity */
+    
+    /* Accent Color (HSL) */
+    --accent-hue: 180; /* Teal */
+    --accent-saturation: 49%;
+    --accent-lightness: 65%;
+    
+    /* Panel Colors */
+    --sidebar-color: rgba(15, 30, 15, 0.85);
+    --main-content-color: rgba(15, 30, 15, 0.65);
 }
 ```
 
-### Download Theme
-- Goto [release](https://github.com/sang765/Anicord-Theme/releases) page.
-- Download **Anicord.theme.css**
-- Open your theme folder and put file **Anicord.theme.css** to theme folder
-- Enable it and enjoy.
+## Credits
 
-## 🌟 Star History
+- **Original Theme**: [Anicord](https://github.com/sang765/Anicord-Theme) by sangsdayy
+- **Base Theme**: [Translucence](https://capnkitten.github.io/BetterDiscord/Themes/Translucence/) by CapnKitten
+- **Miku Edition Customization**: Lexius-CoS
 
-<a href="https://star-history.com/#sang765/Anicord-Theme&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sang765/Anicord-Theme&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sang765/Anicord-Theme&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sang765/Anicord-Theme&type=Date" />
- </picture>
-</a>
+## License
 
-## 🖋️ CREDITS:
-- **[Translucence Theme](https://betterdiscord.app/theme/Translucence)**
-
-<a href="https://betterdiscord.app/theme/Translucence"><img src="https://images-ext-2.discordapp.net/external/QDSBRxPptJ9sGP_tp_zl_-P5PCy8T4To3qewzI_kf_k/https/betterdiscord.app/image/339?" alt="Translucence" width="500"></a>
-
-- **[Chillax Theme](https://betterdiscord.app/theme/Chillax)**
-
-<a href="https://betterdiscord.app/theme/Chillax"><img src="https://images-ext-2.discordapp.net/external/q2ARW13l3EG6jb0QG14VynEwVvenrLEcflM6ReyLQT0/https/betterdiscord.app/Image/1393?" alt="Chillax" width="500"></a>
-
-- **[ClearVision V7](https://betterdiscord.app/theme/ClearVision)**
-
-<a href="https://betterdiscord.app/theme/ClearVision"><img src="https://raw.githubusercontent.com/ClearVision/ClearVision-v7/master/screenshots/treatment-3.jpg" alt="ClearVision" width="500"></a>
-
-- CSS Snippet from **[Better Discord Server](https://discord.gg/0Tmfo5ZbORCRqbAd)** and **[Vencord Discord Server](https://discord.gg/vencord)**
-
-## 👍 Contributors
-- Thank for all your suppot 😉
-
-![Contributors](https://contrib.rocks/image?repo=sang765/Anicord-Theme)
+This customization follows the same license as the original Anicord theme.
