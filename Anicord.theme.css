@@ -1,194 +1,115 @@
 /**
- * @name Miku Rose
- * @description A personalized Discord theme — soft pink accents, forest green panels, zero glow lag.
+ * @name Miku Rose — Lavender
+ * @description Soft lavender/purple accent variant.
  * @author Lexius-CoS
- * @version 2.0.0
+ * @version 2.0.0-lavender
  * @website https://github.com/Lexius-CoS/Anicord-Theme-Miku
- * @source https://github.com/Lexius-CoS/Anicord-Theme-Miku/blob/main/Anicord.theme.css
- * @updateUrl https://raw.githubusercontent.com/Lexius-CoS/Anicord-Theme-Miku/main/Anicord.theme.css
+ * @source https://github.com/Lexius-CoS/Anicord-Theme-Miku/blob/lavender/Anicord.theme.css
+ * @updateUrl https://raw.githubusercontent.com/Lexius-CoS/Anicord-Theme-Miku/lavender/Anicord.theme.css
 */
 
-/* ═══════════════════════════════════════════════════
-   BASE THEME IMPORT (Anicord → Translucence)
-   ═══════════════════════════════════════════════════ */
+/* BASE THEME */
 @import url('https://sang765.github.io/Anicord-Theme/themes/Anicord.css');
 
-/* ═══════════════════════════════════════════════════
-   ROOT VARIABLES — Colors, transparency, layout
-   ═══════════════════════════════════════════════════ */
 :root {
-	/* === BACKGROUND === */
 	--app-bg: url(https://raw.githubusercontent.com/Lexius-CoS/Anicord-Theme-Miku/main/assets/miku-meadow.png);
 	--app-blur: 0px;
 	--app-margin: 16px;
 	--app-radius: 10px;
-
-	/* Font — default Discord font, no external load */
 	--main-font: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--code-font: '';
 	--title-style: center;
 
-	/* === ACCENT (Soft Pink from flowers) === */
-	--accent-hue: 340;
-	--accent-saturation: 60%;
-	--accent-lightness: 65%;
+	/* ACCENT — Muted Lavender */
+	--accent-hue: 270;
+	--accent-saturation: 40%;
+	--accent-lightness: 60%;
 	--accent-opacity: 1;
 	--accent-text-color: #fff;
 
-	/* === PANEL COLORS (Forest Green, transparent) === */
+	/* PANELS — Forest Green, transparent */
 	--sidebar-color: rgba(12, 24, 12, 0.55);
 	--main-content-color: rgba(12, 24, 12, 0.35);
 
-	/* === MESSAGE === */
+	/* MESSAGE */
 	--message-color: rgba(12, 24, 12, 0.45);
 	--message-color-hover: rgba(12, 24, 12, 0.55);
 	--message-radius: 8px;
 	--message-padding-top: 8px;
 	--message-padding-side: 8px;
 
-	/* === REPLY === */
+	/* REPLY */
 	--reply-hue: var(--accent-hue);
-	--reply-saturation: 60%;
-	--reply-lightness: 65%;
+	--reply-saturation: 40%;
+	--reply-lightness: 60%;
 	--reply-opacity: 1;
 
-	/* === TEXTAREA === */
+	/* TEXTAREA */
 	--textarea-color: 12, 24, 12;
 	--textarea-alpha: 0.4;
 	--textarea-alpha-focus: 0.5;
 	--textarea-text-color: #e0e0e0;
 	--textarea-radius: 22px;
 
-	/* === CARD === */
+	/* CARD */
 	--card-color: rgba(12, 24, 12, 0.45);
 	--card-color-hover: rgba(12, 24, 12, 0.55);
 	--card-color-select: rgba(12, 24, 12, 0.7);
 
-	/* === BUTTON === */
+	/* BUTTON */
 	--button-height: 32px;
 	--button-padding: 0 16px;
 	--button-action-color: #fff;
 	--button-radius: 16px;
 
-	/* === SCROLLBAR / INTERACTIVE === */
-	--interactive-normal: #b0a0a8;
-	--interactive-hover: #d8c8d0;
-	--interactive-active: #f0e0e8;
-	--interactive-muted: #706068;
+	/* INTERACTIVE */
+	--interactive-normal: #a8a0b0;
+	--interactive-hover: #d0c8d8;
+	--interactive-active: #e8e0f0;
+	--interactive-muted: #686070;
 
-	/* === BACKGROUND MODIFIERS === */
-	--background-modifier-hover: rgba(200, 150, 170, 0.06);
-	--background-modifier-selected: rgba(200, 150, 170, 0.1);
+	/* MODIFIERS */
+	--background-modifier-hover: rgba(170, 150, 200, 0.06);
+	--background-modifier-selected: rgba(170, 150, 200, 0.1);
 }
 
-/* ═══════════════════════════════════════════════════
-   PERFORMANCE KILLER STRIP
-   Removes: backdrop-filter blur, glow box-shadows,
-   text-shadow glow, brightness filters, heavy transitions
-   ═══════════════════════════════════════════════════ */
-
-/* --- Nuke ALL backdrop-filter (base theme hardcodes blur(5px) in several places) --- */
-.sidebar_d5b8ae,
-.chatContent_d5b8ae,
-.membersWrap_d5b8ae,
+/* ═══ PERFORMANCE KILLER STRIP ═══ */
+.sidebar_d5b8ae, .chatContent_d5b8ae, .membersWrap_d5b8ae,
 .typeWindows_d5b8ae .wordmark_d5b8ae,
 .chat_d5b8ae [class*="channelTextArea"],
-[class*="popout"],
-[class*="modal"],
-[class*="tooltip"],
-[class*="backdrop"],
-[class*="autocomplete"] {
+[class*="popout"], [class*="modal"], [class*="tooltip"],
+[class*="backdrop"], [class*="autocomplete"] {
 	backdrop-filter: none !important;
 	-webkit-backdrop-filter: none !important;
 }
 
-/* --- Remove glow box-shadows on guild icons --- */
 .wrapper_d5b8ae:hover .childWrapper_d5b8ae,
-.listItem_d5b8ae:hover .childWrapper_d5b8ae {
-	box-shadow: none !important;
-}
-
-/* --- Remove glow on channel items --- */
-.channel_d5b8ae:hover,
-.modeSelected_d5b8ae {
-	box-shadow: none !important;
-}
-
-/* --- Remove username text-shadow glow --- */
-.username_d5b8ae:hover,
-.username_d5b8ae:hover span {
-	text-shadow: none !important;
-}
-
-/* --- Remove toolbar button glow --- */
-.iconWrapper_d5b8ae:hover {
-	box-shadow: none !important;
-}
-
-/* --- Remove member list item glow --- */
-.member_d5b8ae:hover {
-	box-shadow: none !important;
-}
-
-/* --- Remove search bar glow --- */
-.searchBar_d5b8ae {
-	box-shadow: none !important;
-}
-
-/* --- Remove message highlight glow --- */
-.message_d5b8ae:hover {
-	box-shadow: none !important;
-}
-
-/* --- Remove reply highlight glow --- */
-.replying_d5b8ae {
-	box-shadow: none !important;
-}
-
-/* --- Remove avatar ring glow --- */
-.avatar_d5b8ae:hover {
-	box-shadow: none !important;
-}
-
-/* --- Remove settings cog glow --- */
+.listItem_d5b8ae:hover .childWrapper_d5b8ae,
+.channel_d5b8ae:hover, .modeSelected_d5b8ae,
+.iconWrapper_d5b8ae:hover, .member_d5b8ae:hover,
+.searchBar_d5b8ae, .message_d5b8ae:hover, .replying_d5b8ae,
+.avatar_d5b8ae:hover, .badge_d5b8ae,
+[class*="pill"][class*="selected"],
 .wrapper_d5b8ae:hover {
 	box-shadow: none !important;
 }
 
-/* --- Remove badge glow --- */
-.badge_d5b8ae {
-	box-shadow: none !important;
+.username_d5b8ae:hover, .username_d5b8ae:hover span {
+	text-shadow: none !important;
 }
 
-/* --- Remove all inset glow shadows (base theme uses these heavily) --- */
-[class*="pill"][class*="selected"] {
-	box-shadow: none !important;
-}
+.icon_d5b8ae { filter: none !important; }
 
-/* --- Remove filter: brightness() chains on icons --- */
-.icon_d5b8ae {
-	filter: none !important;
-}
-
-/* --- Kill version animation --- */
 .container_d5b8ae::after {
 	animation: none !important;
 	-webkit-animation: none !important;
 }
 
-/* --- Override the hardcoded backdrop-filter: blur(5px) in base theme --- */
-/* These target the specific elements in main.css lines 1151 and 1164 */
-[class*="userPopout"] {
+[class*="userPopout"], [class*="userProfileModal"] {
 	backdrop-filter: none !important;
 	-webkit-backdrop-filter: none !important;
 }
 
-[class*="userProfileModal"] {
-	backdrop-filter: none !important;
-	-webkit-backdrop-filter: none !important;
-}
-
-/* --- Simplify transitions (no box-shadow transitions) --- */
 * {
 	transition-property: opacity, transform, background-color, color !important;
 	transition-duration: 150ms !important;
