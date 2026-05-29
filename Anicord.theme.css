@@ -1,100 +1,126 @@
 /**
- * @name Anicord
- * @description Yes, this is another anime Discord theme. 
- * @author sangsdayy
- * @authorLink https://github.com/sang765
- * @version 1.5.9
- * @website https://github.com/sang765/Anicord-Theme
- * @source https://github.com/sang765/Anicord-Theme/blob/main/Anicord.theme.css
- * @authorId 926519119849869322
- * @updateUrl https://sang765.github.io/Anicord-Theme/Anicord.theme.css
+ * @name Anicord Miku Edition
+ * @description A customized Anicord theme with Miku teal accent and forest green panels.
+ * @author sangsdayy (original), Lexius-CoS (customization)
+ * @authorLink https://github.com/Lexius-CoS
+ * @version 1.0.0
+ * @website https://github.com/Lexius-CoS/Anicord-Theme-Miku
+ * @source https://github.com/Lexius-CoS/Anicord-Theme-Miku/blob/main/Anicord.theme.css
+ * @authorId 286425211
+ * @updateUrl https://raw.githubusercontent.com/Lexius-CoS/Anicord-Theme-Miku/main/Anicord.theme.css
 */
 
 /*
-ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ𝑨𝒏𝒊𝒎𝒆 𝒊𝒏𝒔𝒊𝒅𝒆 𝑫𝒊𝒔𝒄𝒐𝒓𝒅ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ
+ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ𝑨𝒏𝒊𝒄𝒐𝒓𝒅 𝑴𝒊𝒌𝒖 𝑬𝒅𝒊𝒕𝒊𝒐𝒏ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ
 | ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ |
 | |     █████╗ ███╗   ██╗██╗ ██████╗ ██████╗ ██████╗ ██████╗    | |
 | |    ██╔══██╗████╗  ██║██║██╔════╝██╔═══██╗██╔══██╗██╔══██╗   | |
-| |    ███████║██╔██╗ ██║██║██║     ██║   ██║██████╔╝██║  ██║   | |
+| |    ███████║██╔██╗ ██║██║██║     ██║   ██║██████╔╝██║  ██╗   | |
 | |    ██╔══██║██║╚██╗██║██║██║     ██║   ██║██╔══██╗██║  ██║   | |
 | |    ██║  ██║██║ ╚████║██║╚██████╗╚██████╔╝██║  ██║██████╔╝   | |
 | |    ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝    | |
 | ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ |
-|ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ
+ᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳᅳ
 */  
 
 /* Theme Import */
 @import url('https://sang765.github.io/Anicord-Theme/themes/Anicord.css');
+
 /* CSS You Can Custom */
 :root {
-	--app-bg: url(https://sang765.github.io/Anicord-Theme/assets/themeimage.png); /* background */
-	/* 📄 NOTE: If you want the background to be transparent then you can remove the `url(imageurl)` and then change the attribute to `transparent`
-           Requirements: Please enable "Windows Transparent" in your client mod make sure that work. You aslo can use Mica For Everyone to have a transparent backgound with Mica blur effect */
+	/* === BACKGROUND === */
+	--app-bg: url(https://raw.githubusercontent.com/Lexius-CoS/Anicord-Theme-Miku/main/assets/miku-meadow.png);
+	
 	/* Blur, Margin, Radius */
-	--app-blur: 5px;
-	--app-margin: 24px;
+	--app-blur: 2px; /* Reduced from 5px for better performance */
+	--app-margin: 16px;
 	--app-radius: 10px;
+	
 	/* Font */
 	--main-font: 'Tilt Neon';
 	--code-font: '';
+	
 	/* Server Title */
-	--title-style: center; /* left or center*/
-	/* Color - HSLA */ /* Hex to HSL here: https://htmlcolors.com/hex-to-hsl */
-	--accent-hue: 204; /* H */
-	--accent-saturation: 80%; /* S */
+	--title-style: center; /* left or center */
+	
+	/* === ACCENT COLOR (Miku Teal) === */
+	/* HSL: 180, 49%, 65% */
+	--accent-hue: 180; /* H */
+	--accent-saturation: 49%; /* S */
 	--accent-lightness: 65%; /* L */
 	--accent-opacity: 1; /* A */
 	--accent-text-color: #fff; /* Text Color */
-	/* Others */
-	--sidebar-color: rgba(0,0,0,0.4);
-	--main-content-color: rgba(0,0,0,0.2); /*	-	*/
-	/* Message */
-	--message-color: rgba(0,0,0,0.4);
+	
+	/* === PANEL COLORS (Forest Green Tint) === */
+	/* Dark forest green with transparency */
+	--sidebar-color: rgba(15, 30, 15, 0.85);
+	--main-content-color: rgba(15, 30, 15, 0.65);
+	
+	/* === MESSAGE === */
+	--message-color: rgba(15, 30, 15, 0.75);
+	--message-color-hover: rgba(15, 30, 15, 0.85);
 	--message-radius: 8px;
 	--message-padding-top: 8px;
-	--message-padding-side: 8px; /*	-	*/
-	/* Reply */
+	--message-padding-side: 8px;
+	
+	/* === REPLY === */
 	--reply-hue: var(--accent-hue);
-	--reply-saturation: 77.4%;
-	--reply-lightness: 61.8%;
-	--reply-opacity: 1; /*	-	*/
-	/* Textarea */
-	--textarea-color: 255,255,255;
-	--textarea-alpha: 0.1;
-	--textarea-alpha-focus: 0.15;
-	--textarea-text-color: #fff;
-	--textarea-radius: 22px;  /*	-	*/
-	/* Card */
-	--card-color: rgba(0,0,0,0.4);
-	--card-color-hover: rgba(0,0,0,0.5);
-	--card-color-select: rgba(0,0,0,0.7); /*	-	*/
-	/* Button */
+	--reply-saturation: 49%;
+	--reply-lightness: 65%;
+	--reply-opacity: 1;
+	
+	/* === TEXTAREA === */
+	--textarea-color: 15, 30, 15;
+	--textarea-alpha: 0.7;
+	--textarea-alpha-focus: 0.8;
+	--textarea-text-color: #e0e0e0;
+	--textarea-radius: 22px;
+	
+	/* === CARD === */
+	--card-color: rgba(15, 30, 15, 0.75);
+	--card-color-hover: rgba(15, 30, 15, 0.85);
+	--card-color-select: rgba(15, 30, 15, 0.95);
+	
+	/* === BUTTON === */
 	--button-height: 32px;
 	--button-padding: 0 16px;
-	--button-action-color: #000;
-	--button-radius: 16px; /*	-	*/
-	/* Scrollbar */
-	--interactive-normal: #aaa;
-	--interactive-hover: #ddd;
-	--interactive-active: #fff;
-	--interactive-muted: #777; /*	-	*/
-	/* Background */
-	--background-modifier-hover: rgba(255,255,255,0.075);
-	--background-modifier-selected: rgba(255,255,255,0.125);
+	--button-action-color: #fff;
+	--button-radius: 16px;
+	
+	/* === SCROLLBAR === */
+	--interactive-normal: #8faa8f;
+	--interactive-hover: #b0d4b0;
+	--interactive-active: #d0f0d0;
+	--interactive-muted: #5a7a5a;
+	
+	/* === BACKGROUND MODIFIERS === */
+	--background-modifier-hover: rgba(120, 200, 120, 0.075);
+	--background-modifier-selected: rgba(120, 200, 120, 0.125);
+	
+	/* === TRANSLUCENCE OVERRIDES === */
+	--main-rgb: 15, 30, 15;
+	--main-content-opacity: 0.65;
+	--sidebar-opacity: 0.85;
+	--popout-color: rgba(15, 30, 15, 0.9);
+	--popout-blur: 4px;
+	--tooltip-color: hsla(180, 49%, 65%, 1);
+	--tooltip-text-color: #fff;
 }
 
 /*
-			            			<= CREDITS =>
+		\t            \t\t\t<= CREDITS =>
 |<================================= Anicord Team ==================================>|
-| <+>           sang765                                       Author		    |
+| <+>           sang765                                       Author\t\t    |
 |<=================================================================================>|
-| <-> Settings Icons                           by DevilBro			    |
-| <-> Better Mark As Read Button               by Lonk		         	    |
+| <-> Settings Icons                           by DevilBro\t\t\t    |
+| <-> Better Mark As Read Button               by Lonk\t\t         \t    |
 | <-> Chillax                                  by warrayquipsome and Contributors   |
-| <-> Translucence                             by CapnKitten			    |
-| <-> ClearVersionV6                           by NyxIsBad and Contributors	    |
+| <-> Translucence                             by CapnKitten\t\t\t    |
+| <-> ClearVersionV6                           by NyxIsBad and Contributors\t    |
 | <-> BetterDiscord Custom CSS Community       https://discord.gg/0Tmfo5ZbORCRqbAd  |
-| <-> Vencord Custom CSS Community             https://discord.gg/D9uwnFnqmd	    |
-| <-> You                                      for using this theme		    |
+| <-> Vencord Custom CSS Community             https://discord.gg/D9uwnFnqmd\t    |
+| <-> You                                      for using this theme\t\t    |
+|<=================================================================================>|
+| <-> Miku Edition Customization               by Lexius-CoS\t\t\t    |
 |<=================================================================================>|
 */
