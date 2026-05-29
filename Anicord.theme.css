@@ -1,10 +1,10 @@
 /**
- * @name Miku Rose
+ * @name Miku Rose — Pink
  * @description Soft green accent, forest green panels, zero :has() lag.
  * @author Lexius-CoS
  * @version 3.0.0
  * @website https://github.com/Lexius-CoS/Anicord-Theme-Miku
- * @source https://github.com/Lexius-CoS/Anicord-Theme-Miku/blob/main/Anicord.theme.css
+ * @source https://github.com/Lexius-CoS/Anicord-Theme-Miku/blob/pink/Anicord.theme.css
  * @updateUrl https://raw.githubusercontent.com/Lexius-CoS/Anicord-Theme-Miku/main/Anicord.theme.css
 */
 
@@ -33,10 +33,10 @@
 	--code-font: '';
 	--title-style: center;
 
-	/* === ACCENT (Forest Green) === */
-	--accent-hue: 140;
-	--accent-saturation: 50%;
-	--accent-lightness: 50%;
+	/* === ACCENT (Soft Pink) === */
+	--accent-hue: 340;
+	--accent-saturation: 60%;
+	--accent-lightness: 65%;
 	--accent-hsl: var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness);
 	--accent-opacity: 1;
 	--accent-text-color: #fff;
@@ -50,7 +50,7 @@
 	--alert-action-color: #fff;
 	--alert-text-color: #fff;
 
-	/* === PANEL COLORS (Forest Green tint, transparent) === */
+	/* === PANEL COLORS (Soft Pink tint, transparent) === */
 	--main-rgb: 12, 24, 12;
 	--main-content-opacity: 0.35;
 	--sidebar-opacity: 0.5;
@@ -137,10 +137,10 @@
 	--tooltip-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 
 	/* === INTERACTIVE / SCROLLBAR === */
-	--interactive-normal: #a0b0a0;
-	--interactive-hover: #c0d8c0;
-	--interactive-active: #e0f0e0;
-	--interactive-muted: #607060;
+	--interactive-normal: #b0a0a8;
+	--interactive-hover: #d8c8d0;
+	--interactive-active: #f0e0e8;
+	--interactive-muted: #706068;
 	--channels-default: var(--interactive-normal);
 	--header-secondary: #d0d8d0;
 	--background-primary: transparent;
@@ -157,8 +157,8 @@
 	--scrollbar-opacity-hover: 0.25;
 
 	/* Background modifiers */
-	--background-modifier-hover: rgba(120, 180, 120, 0.06);
-	--background-modifier-selected: rgba(120, 180, 120, 0.1);
+	--background-modifier-hover: rgba(200, 150, 170, 0.06);
+	--background-modifier-selected: rgba(200, 150, 170, 0.1);
 }
 
 /* ═══════════════════════════════════════════════════
